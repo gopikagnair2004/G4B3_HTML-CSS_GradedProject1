@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="labTest.css">
+    <title>Lab Test</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Lab Test
+        </h1>
+    </header>
+    <main>
+
+        <form action="#">
+            <div class="labForm">
+                <img src="../Images/Lab-Test/lab-test.jpg" alt="LabImage">
+                <div class="formContainer">
+                    <p class="heading">1. Your Contact Details</p>
+                    <div class="tableContainer">
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="text" id="full-name" name="full-name" placeholder="Full Name" required>
+                                </td>
+                                <td>
+                                    <input type="text" id="patient-id" name="patient-id"
+                                        placeholder="Patient Id if exists">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="number" id="contact-number" name="contact-number"
+                                        placeholder="Contact Number" min="6000000000" max="9999999999" required>
+                                </td>
+                                <td>
+                                    <input type="email" id="email-id" name="email-id" placeholder="Email id" required>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p class="heading">2. Address</p>
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="text" id="h-no" name="h-no" placeholder="H-No" required>
+                            </td>
+                            <td>
+                                <input type="text" id="street" name="street" placeholder="Street" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" id="area" name="area" placeholder="Area" required>
+                            </td>
+                        </tr>
+
+                    </table>
+                    <div class="district">
+                        <label for="district">District</label><br>
+                        <select name="district" title="district">
+                            <option value="Choose">Choose</option>
+                            <option value="Kochi">Kochi</option>
+                            <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+                            <option value="Kozhikode">Kozhikode</option>
+                            <option value="Thrissur">Thrissur</option>
+                            <option value="Palakkad">Palakkad</option>
+                        </select>
+                    </div>
+                    <p class="heading">3.Choose the Test Type:</p>
+                    <p class="message">(* Check at least one box without fail)</p>
+                    <div class="checkbox">
+                        <input type="checkbox" id="cbc" name="test-type" value="cbc">
+                        <label for="cbc">CBC</label><br>
+                        <input type="checkbox" id="complete-urine" name="test-type" value="complete-urine">
+                        <label for="complete-urine">Complete Urine</label><br>
+                        <input type="checkbox" id="lipid-profile" name="test-type" value="lipid-profile">
+                        <label for="lipid-profile">Lipid Profile</label><br>
+                        <input type="checkbox" id="tsh" name="test-type" value="tsh">
+                        <label for="tsh">Thyroid Stimulating Hormone (TSH)</label><br>
+                        <input type="checkbox" id="glucose" name="test-type" value="glucose">
+                        <label for="glucose">Glucose Test</label><br>
+                    </div>
+
+                    <div class="checkbox">
+                        <p class="heading">4. Do you want a hard copy of the report also?</p>
+                        <input type="radio" id="hard-copy" name="hard-copy" value="yes">
+                        <label for="hard-copy">Yes</label>
+                        <input type="radio" id="no-hard-copy" name="hard-copy" value="no">
+                        <label for="no-hard-copy">No</label><br>
+                    </div>
+
+                    <p class="heading">5. Select Your Comfortable Date and Time</p>
+                    <input type="date" id="date" name="date"><br>
+                    <input type="time" id="time" name="time"><br>
+
+                </div>
+            </div>
+            <div class="buttonContainer">
+                <button type="reset" value="Reset">Reset</button>
+                <button type="submit" value="Submit">Submit</button>
+            </div>
+        </form>
+
+    </main>
+</body>
+
+</html>

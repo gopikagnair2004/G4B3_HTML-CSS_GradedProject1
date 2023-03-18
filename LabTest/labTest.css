@@ -1,0 +1,116 @@
+* {
+    margin: 0px;
+    padding: 0px
+}
+
+header {
+    position: sticky;
+    top: 0;
+
+}
+
+header h1 {
+    background-color: rgb(78, 74, 74);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 45px;
+}
+
+.labForm {
+    width: 90%;
+    height: 500px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+    align-self: center;
+    margin: 5%;
+    overflow-y: scroll;
+    padding: 0px;
+}
+
+.labForm img {
+    position: sticky;
+    width: 35%;
+    right: 0;
+    top: 0;
+    height: 100%;
+    float: right;
+}
+
+.formContainer {
+    max-width: 65%;
+    overflow-y: scroll;
+    margin: 10px;
+    padding: 10px;
+}
+
+.heading {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    overflow-x: scroll;
+}
+
+table input {
+    border: none;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+    margin: 15px;
+    width: 80%;
+}
+
+.district label {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.district select,
+#date,
+#time {
+    width: 80%;
+    padding: 10px;
+    margin: 15px;
+}
+
+.message {
+    padding: 0px 20px;
+    font-weight: bold;
+}
+
+.checkbox input {
+    padding: 10px;
+    margin: 10px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+}
+
+button {
+    font-size: 25px;
+    color: white;
+    background-color: blueviolet;
+    width: 95px;
+    border: none;
+    border-radius: 5px;
+    margin: 0px 20px;
+}
+
+@media screen and (max-width: 750px) {
+
+    tr,
+    td {
+        display: block;
+        width: 100%;
+    }
+}
